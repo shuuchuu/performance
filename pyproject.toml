@@ -1,17 +1,12 @@
-[tool.poetry]
-authors = ["m09 <142691+m09@users.noreply.github.com>"]
+[project]
+authors = [
+  {name = "m09", email = "142691+m09@users.noreply.github.com"},
+]
+dependencies = ["numpy >= 2, < 3"]
 description = ""
-name = "demo-performance"
+name = "performance"
+requires-python = ">= 3.10"
 version = "0.1.0"
 
-[tool.poetry.dependencies]
-numpy = "^1"
-python = "^3.10"
-
-[tool.poetry.group.dev.dependencies]
-filprofiler = "*"
-pyinstrument = "*"
-
-[build-system]
-build-backend = "poetry.core.masonry.api"
-requires = ["poetry-core"]
+[dependency-groups]
+dev = ["filprofiler", "pyinstrument"]
