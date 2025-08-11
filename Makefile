@@ -7,4 +7,4 @@ cpu2:
 memory:
 	python -m filprofiler run memory.py
 
-.PHONY: cpu memory
+.PHONY: cpu1 cpu2 memory
