@@ -7,7 +7,7 @@ def a() -> None:
 
 def b() -> None:
     for i in range(20_000_000):
-        a = i + 1
+        _a = i + 1
 
 
 def main():

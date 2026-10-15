@@ -2,7 +2,11 @@
 authors = [
   {name = "m09", email = "142691+m09@users.noreply.github.com"},
 ]
-dependencies = []
+dependencies = [
+  "filprofiler >= 2024.11.2",
+  "numpy >= 2, < 3",
+  "pyinstrument >= 5, < 6",
+]
 description = "Profile CPU and memory usage of Python code."
 homepage = "https://github.com/shuuchuu/performance"
 license = "Apache-2.0"

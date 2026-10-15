@@ -12,8 +12,8 @@ def make_two_arrays():
 
 
 def main():
-    arr1, arr2 = make_two_arrays()
-    another_arr = make_big_array()
+    _arr1, _arr2 = make_two_arrays()
+    _another_arr = make_big_array()
 
 
 main()
