@@ -1,11 +1,35 @@
 [project]
-dependencies = [
-  "filprofiler >= 2024.11.2",
-  "numpy >= 2, < 3",
-  "pyinstrument >= 5, < 6",
+authors = [
+  {name = "m09", email = "142691+m09@users.noreply.github.com"},
 ]
-description = "Add your description here"
+dependencies = []
+description = "Profile CPU and memory usage of Python code."
+homepage = "https://github.com/shuuchuu/performance"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
 name = "performance"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">= 3.12"
 version = "0.1.0"
+
+[dependency-groups]
+dev = [
+  "ruff >= 0.16",
+  "ty >= 0.0.33",
+]
+
+[tool.ruff]
+target-version = "py312"
+
+[tool.ruff.lint]
+ignore = [
+  "D1",
+  "incorrect-blank-line-before-class",
+  "multi-line-summary-second-line",
+  "non-empty-init-module",
+]
+preview = true
+select = ["A", "B", "C", "D", "DOC", "E", "EM", "F", "I", "N", "PIE", "PTH", "RET", "RUF", "SIM", "SLF", "TC", "UP", "W"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
